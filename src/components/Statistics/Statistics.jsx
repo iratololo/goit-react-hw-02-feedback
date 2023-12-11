@@ -1,12 +1,13 @@
+import {StatisticItem, StatisticResult} from "./Statistics.stayled"
 
 export const Statistics = ({ good, neutral,bad, total, positivePercentage  }) => {
         return (
             <ul>
-                <li>Good: {good}</li>
-                <li>Neutral: {neutral}</li>
-                <li>Bad: {bad}</li>
-                <li>Total: {total}</li>
-                <li>Positive feedback: {positivePercentage}%</li>
+                <StatisticItem>Good: {good}</StatisticItem>
+                <StatisticItem>Neutral: {neutral}</StatisticItem>
+                <StatisticItem>Bad: {bad}</StatisticItem>
+                <StatisticResult>Total: {total}</StatisticResult>
+                <StatisticResult>Positive feedback: {positivePercentage}%</StatisticResult>
             </ul>
         );
 }

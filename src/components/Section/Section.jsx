@@ -1,8 +1,9 @@
+import { SectionTitle } from "./Section.stayled"
 
 export const Section = ({title, children}) => {
     return (
             <div>
-                <h2>{title}</h2> 
+                <SectionTitle>{title}</SectionTitle> 
                 {children}
             </div>
         )

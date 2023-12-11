@@ -1,11 +1,12 @@
+import { FeedbackOption, FeedbackRow } from "./FeedbackOptions.stayled"
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
     return (
-            <div>
+            <FeedbackRow>
                 {options.map(item => {
-                    return (<button key={item} onClick={onLeaveFeedback} id={item} type='button'>{item}</button>)
+                    return (<FeedbackOption key={item} onClick={onLeaveFeedback} id={item} type='button'>{item}</FeedbackOption>)
                 })}
-            </div>
+            </FeedbackRow>
         );
 }
 
